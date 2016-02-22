@@ -1,2 +1,10 @@
 sudo: required
-script: "./build.sh"
+
+arch:
+  packages:
+    - mingw-w64-gcc
+  script:
+    - "./build_script.sh"
+
+script:
+  - "curl -s https://raw.githubusercontent.com/mikkeloscar/arch-travis/master/arch-travis.sh | bash"
