@@ -3,6 +3,7 @@ sudo: required
 arch:
   packages:
     - mingw-w64-gcc
+    - mingw-w64-winpthreads
   script:
     - "./build_script.sh"
 
